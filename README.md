@@ -1,2 +1,2 @@
 # Python
-Repositório com programas básicos em Python - Finalidade didática;
+Repositório com exemplo simples em Python - Finalidade didática;
