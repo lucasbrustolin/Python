@@ -51,7 +51,7 @@ for linha in arquivo:
 print('Número de linhas no arquivo: ', contador )
 # print('Número de linhas no arquivo: ' + str(contador) )
 arquivo.close()
-"""
+
 # -------------------------------------------------------------------------------------
 #                                       EXEMPLO 4
 #
@@ -63,6 +63,24 @@ contador = 0
 for linha in arquivo:
     linha = linha.rstrip()
     if 'Python' in linha:
+        contador = contador + 1
+        print(linha)
+print('\nNumero de linhas que possuem a palavra Python:', contador )
+arquivo.close()
+"""
+
+# -------------------------------------------------------------------------------------
+#                                       EXEMPLO 5
+#
+# Description: Busca palavra chave (Digitada) dentro no arquivo texto (Case Sensitive)
+# -------------------------------------------------------------------------------------
+print("\nRetornado somente as linhas que possuem a palavra digita pelo user")
+palavra = input("Digite a palavra de busca:")
+arquivo = open ('resource/arquivo.txt','r')
+contador = 0
+for linha in arquivo:
+    linha = linha.rstrip()
+    if palavra in linha:
         contador = contador + 1
         print(linha)
 print('\nNumero de linhas que possuem a palavra Python:', contador )
